@@ -1,1 +1,1 @@
-# Rotational-Equivariant-VAE-
+# Rotational-Equivariant-VAE
