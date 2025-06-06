@@ -16,16 +16,16 @@ The core of this experiment is a custom training objective that teaches the mode
 * **Base Model:** The VAE was extracted from the popular **`Disty0/SoteMix`** model, which is based on Stable Diffusion v1.5.
 * **Custom Loss Function:** The model was fine-tuned using a dual-objective loss function composed of:
     1.  **Reconstruction Loss:** A standard Mean Squared Error (MSE) loss to ensure the VAE can accurately reconstruct images.
-    2.  **Rotation Loss:** A MSE loss that explicitly penalizes the model if decoding a 180°-rotated latent vector does not produce a 180°-rotated version of the original image.
+    2.  **Rotation Loss:** A MSE loss that explicitly penalizes the model if decoding a 180-degree-rotated latent vector does not produce a 180-degree-rotated version of the original image.
 * **Training Environment:** All data collection, model training, and testing were performed using Google Colab.
 
 ## Results & Verification
 
 The model successfully learned the desired rotational property. This was quantitatively verified by performing a round-trip transformation:
 1.  An image is encoded into a latent vector.
-2.  The latent vector is flipped/rotated 180°.
+2.  The latent vector is flipped/rotated 180-degree.
 3.  The modified latent is decoded, producing a rotated image.
-4.  The final image is rotated back 180°.
+4.  The final image is rotated back 180-degree.
 
 The Mean Squared Error (MSE) between the final image and the original input was exceptionally low (**~0.0023**), proving that the transformation is nearly perfectly flipped and that the model has learned the intended rotational equivariance.
 
