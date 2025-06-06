@@ -2,7 +2,7 @@
 
 An experiment in fine-tuning a Variational Autoencoder (VAE) to understand 180-degree rotations, making the latent space equivariant to the pixel space.
 
-PI: Xinqi Liu
+PI: Xin Qi Liu
 
 ---
 
