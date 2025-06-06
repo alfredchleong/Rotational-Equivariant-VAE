@@ -34,3 +34,5 @@ The Mean Squared Error (MSE) between the final image and the original input was 
 Due to how GitHub renders (or fails to render) notebooks with interactive widget outputs, it's recommended to view the project notebook using nbviewer.
 
 **[Click here to view `vaeTrain.ipynb` on nbviewer](https://nbviewer.org/github/alfredchleong/Rotational-Equivariant-VAE/main/blob/vaeTrain.ipynb)**
+
+If that does not work, open the notebook via Google Colab or locally.
